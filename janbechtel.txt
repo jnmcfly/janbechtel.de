@@ -1,0 +1,12 @@
+<span id="a">jan@bechtel</span>:<span id="b">~</span><span id="c">$</span> ./introduction.sh <br/><br/>
+Hi, ich bin Jan Bechtel.<!-- WER DIESE KOMMENTARE FINDET, DARF SIE BEHALTEN -->
+<p>Ich bin Fachinfromatiker für Systemintegration</p><!-- WER DIESE KOMMENTARE FINDET, DARF SIE BEHALTEN -->
+<p>1989 geboren und aufgewachsen im wunderschönen Nordhessen.</p><!-- WER DIESE KOMMENTARE FINDET, DARF SIE BEHALTEN -->
+<p>Ich interessiere mich für Linux, Docker und Automatisierung.</p><!-- WER DIESE KOMMENTARE FINDET, DARF SIE BEHALTEN -->
+Wenn du mit mir in Kontakt treten willst,<!-- slightdelayhere--> dann am besten über <a href="www.linkedin.com/in/janbechtel">linkedin</a>.<br>
+Oder einfach eine E-Mail..<!-- WER DIESE KOMMENTARE FINDET, DARF SIE BEHALTEN -->.
+Meine E-Mail Adresse lautet: <a href="mailto:jan.bechtel@gmail.com">jan.bechtel@gmail.com</a> oder Instagram <a href="https://www.instagram.com/janmcfly/">@janmcfly</a>
+<p>Für ein paar Referenzen, hier mein <a href="https://github.com/jnmcfly">GitHub Repo</a>.</p>
+<br>
+<p>make it count<!-- Rosen sind Rot -->.<!-- Die Gedanken sind frei -->.<!-- Tony Hawks Proskater 2 -->.</p>
+<font color="black"> vielleicht ist noch irgenwas versteckt </font>
