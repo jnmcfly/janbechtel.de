@@ -1,12 +1,36 @@
-<span id="a">jan@bechtel</span>:<span id="b">~</span><span id="c">$</span> ./introduction.sh <br/><br/>
-Hi, ich bin Jan Bechtel.<!-- WER DIESE KOMMENTARE FINDET, DARF SIE BEHALTEN -->
-<p>Ich bin Fachinfromatiker für Systemintegration</p><!-- WER DIESE KOMMENTARE FINDET, DARF SIE BEHALTEN -->
-<p>1989 geboren und aufgewachsen im wunderschönen Nordhessen.</p><!-- WER DIESE KOMMENTARE FINDET, DARF SIE BEHALTEN -->
-<p>Ich interessiere mich für Linux, Docker und Automatisierung.</p><!-- WER DIESE KOMMENTARE FINDET, DARF SIE BEHALTEN -->
-Wenn du mit mir in Kontakt treten willst,<!-- slightdelayhere--> dann am besten über <a href="www.linkedin.com/in/janbechtel">linkedin</a>.<br>
-Oder einfach eine E-Mail..<!-- WER DIESE KOMMENTARE FINDET, DARF SIE BEHALTEN -->.
-Meine E-Mail Adresse lautet: <a href="mailto:jan.bechtel@gmail.com">jan.bechtel@gmail.com</a> oder Instagram <a href="https://www.instagram.com/janmcfly/">@janmcfly</a>
-<p>Für ein paar Referenzen, hier mein <a href="https://github.com/jnmcfly">GitHub Repo</a>.</p>
-<br>
-<p>make it count<!-- Rosen sind Rot -->.<!-- Die Gedanken sind frei -->.<!-- Tony Hawks Proskater 2 -->.</p>
-<font color="black"> vielleicht ist noch irgenwas versteckt </font>
+<span id="prompt">➜</span><span id="dir"> ~ </span> kubeclt apply -f ./introduction.yaml 
+configmap/introduction created
+<span id="prompt">➜</span><span id="dir"> ~ </span> kubectl get configmap introduction -o json | jq '.data'
+{ <pre>
+    <span id="bluejq">"name"</span>:        <span id="greenjq">jan bechtel</span>,  
+    <span id="bluejq">"from"</span>:        <span id="greenjq">marburg, germany</span>,
+    <span id="bluejq">"born"</span>:        <span id="greenjq">1989</span>,
+    <span id="bluejq">"profession"</span>:  <span id="greenjq">DevOps Engineer</span>,
+    <span id="bluejq">"github"</span>:      <span id="greenjq"><a href="https://github.com/jnmcfly">jnmcfly</a></span>,
+    <span id="bluejq">"linkedin"</span>:    <span id="greenjq"><a href="https://www.linkedin.com/in/janbechtel/">Jan Bechtel</a></span>,
+    <span id="bluejq">"instagram"</span>:   <span id="greenjq"><a href="https://www.instagram.com/janmcfly/">@janmcfly</a></span>
+  </pre>
+}
+
+<span id="prompt">➜</span><span id="dir"> ~ </span> git clone https://gitlab.********.com/skills.git
+
+Cloning into 'skills' ...
+remote: Enumerating objects: 1, done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 1
+Receiving: 100% (1/1), 3 B | 13.37 MiB/s, done.
+Resolve differences: 100% (29556/29556), done.
+
+<span id="prompt">➜</span><span id="dir"> ~ </span> cd skills
+<span id="prompt">➜</span><span id="dir"> ~ </span><span id="zshaddon">git:(</span><span id="branch">master</span><span id="zshaddon">)</span> ls
+<pre><span id="bluejq">charts</span>    Chart.yaml  <span id="bluejq">templates</span>  values.yaml</pre>
+<span id="prompt">➜</span><span id="dir"> ~ </span><span id="zshaddon">git:(</span><span id="branch">master</span><span id="zshaddon">)</span> helm install skills .
+
+NAME: skills
+LAST DEPLOYED: Sat Apr  20 13:37:00 2020
+NAMESPACE: default
+STATUS: deployed
+REVISION: 42
+NOTES:<pre>
+    1. Follow these introductions to experience your application:
+    Visit <a href="http://janbechtel.de/skills">http://janbechtel.de/skills</a> to use your application"
+<pre>
