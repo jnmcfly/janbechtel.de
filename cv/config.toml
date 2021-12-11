@@ -1,5 +1,5 @@
 baseURL = "https://janbechtel.de/cv"
-languageCode = "en"
+languageCode = "de"
 defaultContentLanguage = "de"
 title = "Jan Bechtel"
 theme = "hallo"
