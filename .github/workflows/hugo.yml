@@ -29,4 +29,4 @@ jobs:
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWD }}
           local-dir: ./cv/public/
-          server-dir: ${{ secrets.FTP_DIR }}/cv
+          server-dir: ${{ secrets.FTP_DIR }}/cv/
