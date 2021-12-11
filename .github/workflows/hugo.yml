@@ -1,8 +1,9 @@
 on: 
   push:
-    paths-ignore:
-      - "cv/**"
-name: 🚀 Deploy Main
+    paths:
+      - "**/cv/**"
+
+name: 🚀 Deploy
 jobs:
   build:
     runs-on: ubuntu-20.04
@@ -11,14 +12,22 @@ jobs:
     steps:
       - uses: actions/checkout@v2.4.0
 
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2.4.13
+        with:
+          hugo-version: '0.89.4'
+          # extended: true
+
+      - name: Build
+        run: hugo --minify
+        working-directory: ./cv
+
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.1.0
+        working-directory: ./cv
         with:
           server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWD }}
-          local-dir: ./
-          server-dir: ${{ secrets.FTP_DIR }}
-          exclude: |
-            **/.git/**
-            **/cv/**
+          local-dir: ./public/
+          server-dir: ${{ secrets.FTP_DIR }}/cv
