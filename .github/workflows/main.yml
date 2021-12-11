@@ -2,6 +2,7 @@ on:
   push:
     paths-ignore:
       - "cv/**"
+
 name: 🚀 Deploy Main
 jobs:
   build:
@@ -20,5 +21,7 @@ jobs:
           local-dir: ./
           server-dir: ${{ secrets.FTP_DIR }}
           exclude: |
-            **/.git/**
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
             **/cv/**

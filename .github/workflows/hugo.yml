@@ -3,7 +3,7 @@ on:
     paths:
       - "**/cv/**"
 
-name: 🚀 Deploy
+name: 🚀 Deploy Hugo
 jobs:
   build:
     runs-on: ubuntu-20.04
@@ -24,10 +24,9 @@ jobs:
 
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.1.0
-        working-directory: ./cv
         with:
           server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWD }}
-          local-dir: ./public/
+          local-dir: ./cv/public/
           server-dir: ${{ secrets.FTP_DIR }}/cv
