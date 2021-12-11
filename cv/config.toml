@@ -1,7 +1,7 @@
 baseURL = "https://janbechtel.de/cv"
 languageCode = "de"
 defaultContentLanguage = "de"
-title = "Jan Bechtel"
+title = "Jan"
 theme = "hallo"
 disableKinds = ["page", "section", "taxonomy", "taxonomyTerm"]
 
