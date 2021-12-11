@@ -20,7 +20,7 @@ jobs:
 
       - name: Build
         run: hugo --minify
-        working-directory: ./cv
+        working-directory: ./cv/
 
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.2.0
