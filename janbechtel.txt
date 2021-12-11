@@ -2,35 +2,33 @@
 configmap/introduction created
 <span id="prompt">➜</span><span id="dir"> ~ </span> kubectl get configmap introduction -o json | jq '.data'
 { <pre>
-    <span id="bluejq">"name"</span>:        <span id="greenjq">jan bechtel</span>,  
-    <span id="bluejq">"from"</span>:        <span id="greenjq">marburg, germany</span>,
-    <span id="bluejq">"born"</span>:        <span id="greenjq">1989</span>,
-    <span id="bluejq">"profession"</span>:  <span id="greenjq">DevOps Engineer</span>,
+    <span id="bluejq">"name"</span>:        <span id="greenjq">jan</span>,  
+    <span id="bluejq">"from"</span>:        <span id="greenjq">germany</span>,
+    <span id="bluejq">"born"</span>:        <span id="greenjq">89</span>,
+    <span id="bluejq">"profession"</span>:  <span id="greenjq">devops engineer</span>,
     <span id="bluejq">"github"</span>:      <span id="greenjq"><a href="https://github.com/jnmcfly">jnmcfly</a></span>,
-    <span id="bluejq">"linkedin"</span>:    <span id="greenjq"><a href="https://www.linkedin.com/in/janbechtel/">Jan Bechtel</a></span>,
-    <span id="bluejq">"instagram"</span>:   <span id="greenjq"><a href="https://www.instagram.com/janmcfly/">@janmcfly</a></span>
   </pre>
 }
 
-<span id="prompt">➜</span><span id="dir"> ~ </span> git clone https://gitlab.********.com/skills.git
+<span id="prompt">➜</span><span id="dir"> ~ </span> git clone --depth 1 https://github.com/jnmcfly/cv.git
 
-Cloning into 'skills' ...
+Cloning into 'cv' ...
 remote: Enumerating objects: 1, done.
 remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 1
 Receiving: 100% (1/1), 3 B | 13.37 MiB/s, done.
 Resolve differences: 100% (29556/29556), done.
 
-<span id="prompt">➜</span><span id="dir"> ~ </span> cd skills
+<span id="prompt">➜</span><span id="dir"> ~ </span> cd cv
 <span id="prompt">➜</span><span id="dir"> ~ </span><span id="zshaddon">git:(</span><span id="branch">master</span><span id="zshaddon">)</span> ls
 <pre><span id="bluejq">charts</span>    Chart.yaml  <span id="bluejq">templates</span>  values.yaml</pre>
-<span id="prompt">➜</span><span id="dir"> ~ </span><span id="zshaddon">git:(</span><span id="branch">master</span><span id="zshaddon">)</span> helm install skills .
+<span id="prompt">➜</span><span id="dir"> ~ </span><span id="zshaddon">git:(</span><span id="branch">master</span><span id="zshaddon">)</span> helm install cv .
 
-NAME: skills
+NAME: cv
 LAST DEPLOYED: Sat Apr  20 13:37:00 2020
 NAMESPACE: default
 STATUS: deployed
 REVISION: 42
 NOTES:<pre>
     1. Follow these introductions to experience your application:
-    Visit <a href="http://janbechtel.de/skills">http://janbechtel.de/skills</a> to use your application"
+    Visit <a href="http://janbechtel.de/cv">http://janbechtel.de/cv</a> to use your application"
 <pre>
